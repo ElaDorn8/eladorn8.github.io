@@ -1,0 +1,21 @@
+
+.intro {  
+  color: rgb(253, 139, 81);
+  background-color: rgb(32, 93, 105); 
+    margin: auto;
+    margin-top: 15%;   
+    width: 50%;    
+  height: 80vh;
+}
+h1{
+  margin: 0;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+
