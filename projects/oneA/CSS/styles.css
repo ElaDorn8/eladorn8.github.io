@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(238, 244, 237);
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(76, 6, 29);
+    
+    
+}
+#sale{
+    background-position: 50% 60%;
+   
+}
+
+h2{
+    font-size: 2rem;
+    color: rgb(76, 6, 29);
+    text-align: center;
+}
+
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(30, 148, 128);
+    width: 15%;
+    height: auto;    
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+nav li{
+    display:inline-block;    
+    padding: 10px;
+    margin-inline-end: -17px;
+ }
+
+ a{
+    color: rgb(255, 155, 113);
+    text-decoration: none;
+    border: 2px solid rgb(255, 155, 113);
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    
+ }
+ a:hover{
+    color: rgb(30, 148, 128);
+    background-color:#EDEFEE;
+ }
+.navbar{
+    background-color: rgb(72, 72, 58);
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    }
+
+article{
+    flex: 1;    
+}
+.article{
+    padding:3%; 
+    background-color: rgb(238, 244, 237);
+}
+
+.img{
+    float: left;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(72, 72, 58);
+    color:rgb(255, 155, 113);
+}
+
+footer div{
+    flex: 1;
+}
+
+#logo{
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+div.background {
+    background: url(banner.jpg) no-repeat;
+    border: 2px solid rgb(72, 72, 58);
+   
+  }
+  
+  div.transbox {
+    margin-left: 16%;
+    margin-right: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #ffffff;
+    border: 1px solid rgb(72, 72, 58);
+    opacity: 0.6;
+    text-align: center;
+   
+  }
+
+ 
+
