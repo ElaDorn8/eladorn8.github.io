@@ -2,30 +2,38 @@
 <HTML>
 
 <HEAD>
-  <link rel='stylesheet' href="style.css">
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
   <title>Michaela Dorn</title>
 </HEAD>
 
 <BODY>
-    <div>
+    <div>      
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+      
         <ul>
-            <li style='float:left'><a class="active" href="#home">Home</a></li>
+            <li style='float:left'><a class="active" href="#">Home</a></li>
             <li>
-                <a href ="#">Resume</a>
+                <a href ="pages/experience.html" target="_blank">Experience</a>
             </li>
             <li>
-                <a href="./Contact.js">Contact</a>
+                <a href="pages/contact.html" target="_blank">Contact</a>
             </li>
             <li>
-                <a href="pages/about.html" target='_blank'>About</a>
+                <a href="pages/about.html" target="_blank">About</a>
             </li>
         </ul>
-        <hr />
+       
     </div>
     <div class="intro">
         <h1>Michaela Dorn</h1>
-        <p>Hello and welcome to my portfolio page. I am a mostly seft-taught front-end Webdeveloper. If you have an idea for your website 
-               or you have a design, I can bring it to life.</p> 
+        <p>Hello and welcome to my portfolio page. I am a mostly self-taught front-end Webdeveloper, though I have taken a few classes. If you have an idea for your website 
+           or you have a design, I can bring it to life.</p> 
     </div>
     <hr />
     
@@ -33,7 +41,8 @@
             
     <div id='projectsIntro'><h2>My projects</h2>
         <p> A collection of some projects I have completed while taking
-            some online classes. Clicking on a picture will take you to that site in a new browser tab.<br /> <br />I've put borders around the images just to show that they are the same size.
+            some online classes. Clicking on a picture will take you to that site in a new browser tab.<br /> 
+           This entire site was build with HTML and CSS only.
         </p>
     </div>
     <div class="container">
@@ -79,7 +88,7 @@
         </div>
         <div  class= 'projectCard'>    
             <h3>Simon</h3>    
-            <a href='./projects/seven/seven.html'><img src= 'img/seven.png' alt=""/></a>
+            <a href='./projects/seven/seven.html' target="_blank"><img src= 'img/seven.png' alt=""/></a>
             <p id='cardFont'>Recreation of Simon game. Using javascript.</p>    
         </div>
        
