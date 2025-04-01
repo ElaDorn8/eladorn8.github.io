@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <title>
+            Relevant Experience
+         </title> 
+         <link rel="stylesheet" href=
+         "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<style>
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(32, 93, 105);
+            }
+            
+            /*------------Navbar---------------------*/
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   overflow: hidden;
+    background-color:rgb(253, 139, 81);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  } 
+  
+  
+li a{
+    float: right;
+    display: block;
+    color: rgb(32, 93, 105);
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:rgb(253, 139, 81);
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(238, 221, 172);
+    padding: 14px 15px;
+  }
+  
+  .active.nav {
+    color: rgb(238, 221, 172);
+    background-color: rgb(32, 93, 105);
+    padding: 14px 16px;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(253, 139, 81);
+  }
+     /*--------------------responsive nav----------------*/
+     .checkbtn {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      display: none;      
+    }
+    
+    #check {
+      display: none;
+    }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+      position: fixed;
+    }
+  
+    ul.nav {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background-color: rgba(253, 138, 81, 0.805);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul.nav li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
+  /*------------------Intro-------------------*/
+  .intro{
+    
+        color: rgb(253, 139, 81);
+        background-color: rgb(32, 93, 105); 
+        margin: auto;
+        margin-top:5%;                  
+        width: 80%; 
+        text-align: center;
+        
+    }
+    h1{
+        margin: 0;
+        font-size: 40px;
+        color: rgb(253, 139, 81);                
+    }
+    h3{
+        font-size: 30px;
+    }
+    .skillsContainer { 
+        display: inline-flex; 
+        justify-content: center;
+        width: 100%; 
+         
+    }
+            
+        .skills{               
+            
+            text-align: left;  
+            font-size: 20px;   
+             
+                                 
+        } 
+    .xpP{
+        width:80%;
+        font-size: 20px;            
+        text-align: left;        
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        line-height: 30px;
+    }
+    .cardContainer {  
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .cardContainer1 {  
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;              
+        width: 100%;
+    }
+            .xpCards{
+                flex-shrink: 0;
+                height: 270px;
+               max-width:155px; 
+               min-width: 155px;  
+                background-color: rgb(238, 221, 172);   
+                color: rgb(203, 96, 64);
+                padding-left: 2%;
+                padding-right: 2%;
+                border: 1px rgb(203, 96, 64) solid;
+                border-radius: 7px;
+                box-shadow: 5px 5px 5px rgb(33, 33, 33);
+                margin: 7px;
+            }
+            .xpCards:hover{
+                background-color: rgba(238, 221, 172, 0.732);
+                box-shadow: none;
+            } 
+            .xpLabel{
+                font-size: 12px;
+                color: black;
+                text-align: left;
+            }
+         
+           img{
+               width:100%;
+               height:40%;
+            }  
+
+</style>
+
+    </head>
+<body>
+    <div role="navigation">
+        <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+        <ul class="nav">
+            <li style='float:left;'><a href="../index.html">Home</a></li>
+           
+            <li>
+                <a href ="#" class="active nav">Experience</a>
+            </li>
+            <li>
+                <a href="./contact.html" target="_blank">Contact</a>
+            </li>
+            <li>
+                <a href="./about.html" target="_blank">About</a>
+            </li>
+        </ul>
+       
+    </div>
+
+<div class="intro">
+    <div>
+        <h1>My Experience:</h1>  
+        <h3>Skills:</h3> 
+    </div>
+    <div class="skillsContainer">            
+            <div class="skills"> 
+                <ul><li>HTML</li>
+                    <li> CSS</li>
+                    <li> SQL</li>
+                    <li> Javascript</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <ul><li>VSCode</li>
+                    <li>Relational Databse</li>
+                    <li>Blender</li>
+                    <li> Unity</li>
+                </ul>
+            </div>            
+    </div>
+            <div class="xpP">
+                Most of my web development Experience comes from learning on my own through trial and error.
+                I have taken some formal classes while working on my BS and MIS. In those classes I have made websites
+                using Visual Basic and Visual C#. Most of my classes were in database management. Creating and modifying tables, 
+                creating user accounts for the Relational database, writing queries, etc.
+                Some of my certifications of completion:
+           
+            </div>
+    
+            <div class="cardContainer1">
+               
+                <div class="xpCards">
+                    <p>freeCodeCamp: Responsive Web Design</p>
+                    <a href="https://www.freecodecamp.org/certification/fccca405e60-c75c-42c9-961a-18c17f8bad9d/responsive-web-design">
+                        <img src="./Creds/FCC Responsive.png">
+                    </a>
+                    <p class="xpLabel">Clicking on this will take you to freeCodeCamp in a new window.</p>
+                </div>
+              
+                
+                <div class="xpCards">
+                    <p>Classes finished on Codecademy starting 2020</p>
+                    <a href="https://www.codecademy.com/users/tagMaster50091/achievements">
+                    <img src="./Creds/CC Responsive Design.png">  
+                    </a>
+                    <p class="xpLabel">Clicking on this will take you to Codecademy in a new window.</p>
+                </div>
+            </div>
+
+            <div class="cardContainer">
+                <div class="xpCards">
+                   <p>Coursera: Intro to Front-End Dev.</p> 
+                    <a href="./FEDbig.html" target="_blank">
+                        <img src="./Creds/Coursera Intro FED.png">
+                    </a>
+                    <p class="xpLabel">Click to view a bigger picture in a new window.</p>
+                </div>
+                <div class="xpCards">
+                    <p>Coursera: JavaScript</p>
+                    <a href="./JavaScriptBig.html">
+                        <img src="./Creds/Coursera JaveScript.png" style="padding-top: 20px;">
+                    </a>
+                    <p class="xpLabel">Click to view a bigger picture in a new window.</p>
+                </div>
+                <div class="xpCards">
+                    <p>Coursera: React Basics</p>
+                    <a href="./ReactBig.html">
+                        <img src="./Creds/Coursera React Basics.png">
+                    </a>
+                    <p class="xpLabel">Click to view a bigger picture in a new window.</p>
+                </div>
+                <div class="xpCards">
+                    <p>Coursera: Version Control</p>
+                    <a href="./VCBig.html">
+                        <img src="./Creds/Coursera Version Control.png">
+                    </a>
+                    <p class="xpLabel">Click to view a bigger picture in a new window.</p>
+                </div>
+            </div>
+                       
+</div>
+
+</body>
+
+</html>

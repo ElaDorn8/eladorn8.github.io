@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact Me
+        </title>
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(32, 93, 105);
+            }
+             .contact {  
+                 color: rgb(253, 139, 81);
+                 background-color: rgb(32, 93, 105); 
+                 margin: auto;
+                 margin-top: 15%;   
+                 width: 40%;    
+                 height: 40%; 
+            }
+           
+            .innerBox{
+              margin: auto;
+              width: fit-content;
+            }
+                
+            
+            h1{
+                margin: 0;
+                font-size: 50px;
+                color: rgb(253, 139, 81);
+                text-decoration: underline;
+            }
+  
+            p{
+                font-size: 30px;
+            }
+            /*------------Navbar---------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(253, 139, 81);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+ 
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(32, 93, 105);
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:rgb(253, 139, 81);
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(238, 221, 172);;
+  }
+  
+  .active {
+    color: rgb(238, 221, 172);
+    background-color: rgb(32, 93, 105);
+  }
+   /*--------------------responsive nav----------------*/
+   .checkbtn {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    
+    #check {
+      display: none;
+    }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background-color: green;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+        </style>
+        
+    </head>
+<body>
+    <div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li style='float:left'><a href="../index.html">Home</a></li>
+            <li>
+                <a href ="./experience.html">Experience</a>
+            </li>
+            <li>
+                <a href="#" class="active" target="_blank">Contact</a>
+            </li>
+            <li>
+                <a href="./about.html" target="_blank">About</a>
+            </li>
+        </ul>
+        <hr />
+    <div class="contact">
+        <div class="innerBox">
+            <h1>Contact Me:</h1>
+            <p>Michaela Dorn <br />
+               (407)715-4109 <br />
+            <a href="mailto:elamcc@gmail.com" style="color: rgb(253, 139, 81); ">elamcc@gmail.com</a>  
+        </div>
+    </div>
+
+</body>
+
+</html>
