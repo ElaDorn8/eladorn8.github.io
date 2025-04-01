@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            About Me
+            Contact Me
         </title>
         <link rel="stylesheet" href=
         "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -12,14 +12,21 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(32, 93, 105);
             }
-             .intro {  
+             .contact {  
                  color: rgb(253, 139, 81);
                  background-color: rgb(32, 93, 105); 
                  margin: auto;
                  margin-top: 15%;   
-                width: 50%;    
-                height: 60vh;
+                 width: 40%;    
+                 height: 40%; 
             }
+           
+            .innerBox{
+              margin: auto;
+              width: fit-content;
+            }
+                
+            
             h1{
                 margin: 0;
                 font-size: 50px;
@@ -28,7 +35,7 @@
             }
   
             p{
-                font-size: 20px;
+                font-size: 30px;
             }
             /*------------Navbar---------------------*/
 ul {
@@ -121,29 +128,25 @@ ul {
         <ul>
             <li style='float:left'><a href="../index.html">Home</a></li>
             <li>
-                <a href ="./experience.html" target="_blank">Experience</a>
+                <a href ="./experience.html">Experience</a>
             </li>
             <li>
-                <a href="./contact.html" target="_blank">Contact</a>
+                <a href="#" class="active" target="_blank">Contact</a>
             </li>
             <li>
-                <a href="#" class="active">About</a>
+                <a href="./about.html" target="_blank">About</a>
             </li>
         </ul>
         <hr />
-    <div class="intro">
-    <h1>About me:</h1>
-    <p>I am a mostly self-taught Front-End Webdeveloper. "Mostly" because I did have some formal web-development classes while I was working on my 
-    Bacholors and Master's degree online. In those classes I dabbled in Visual Basic and Visual C#. I have taught myself Javascript, HTML,
-    and CSS through online courses and references. I am aware that there are spiffy things like bootstrap, that give
-    you elements for a website already coded, but I prefer to make my own and reuse them (I feel it gives me more control over the element 
-    and I can do with it what I want without another learning curve).
-    </p>
-    <p>
-    In my spare time I like to make 3D models in Blender and playing around in Unity. I enjoy learning new things and though at times
-    it feels a bit overwhelming, I like to stay caught up with technology. 
-    </p>
+    <div class="contact">
+        <div class="innerBox">
+            <h1>Contact Me:</h1>
+            <p>Michaela Dorn <br />
+               (407)715-4109 <br />
+            <a href="mailto:elamcc@gmail.com" style="color: rgb(253, 139, 81); ">elamcc@gmail.com</a>  
+        </div>
     </div>
+
 </body>
 
 </html>
