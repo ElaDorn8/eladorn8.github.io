@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            About Me
+        </title>
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(32, 93, 105);
+            }
+             .intro {  
+                 color: rgb(253, 139, 81);
+                 background-color: rgb(32, 93, 105); 
+                 margin: auto;
+                 margin-top: 15%;   
+                width: 50%;    
+                height: 60vh;
+            }
+            h1{
+                margin: 0;
+                font-size: 50px;
+                color: rgb(253, 139, 81);
+                text-decoration: underline;
+            }
+  
+            p{
+                font-size: 20px;
+            }
+            /*------------Navbar---------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(253, 139, 81);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+ 
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(32, 93, 105);
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:rgb(253, 139, 81);
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(238, 221, 172);;
+  }
+  
+  .active {
+    color: rgb(238, 221, 172);
+    background-color: rgb(32, 93, 105);
+  }
+   /*--------------------responsive nav----------------*/
+   .checkbtn {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    
+    #check {
+      display: none;
+    }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background-color: green;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+        </style>
+        
+    </head>
+<body>
+    <div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li style='float:left'><a href="../index.html">Home</a></li>
+            <li>
+                <a href ="./experience.html" target="_blank">Experience</a>
+            </li>
+            <li>
+                <a href="./contact.html" target="_blank">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="active">About</a>
+            </li>
+        </ul>
+        <hr />
+    <div class="intro">
+    <h1>About me:</h1>
+    <p>I am a mostly self-taught Front-End Webdeveloper. "Mostly" because I did have some formal web-development classes while I was working on my 
+    Bacholors and Master's degree online. In those classes I dabbled in Visual Basic and Visual C#. I have taught myself Javascript, HTML,
+    and CSS through online courses and references. I am aware that there are spiffy things like bootstrap, that give
+    you elements for a website already coded, but I prefer to make my own and reuse them (I feel it gives me more control over the element 
+    and I can do with it what I want without another learning curve).
+    </p>
+    <p>
+    In my spare time I like to make 3D models in Blender and playing around in Unity. I enjoy learning new things and though at times
+    it feels a bit overwhelming, I like to stay caught up with technology. 
+    </p>
+    </div>
+</body>
+
+</html>
