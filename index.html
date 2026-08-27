@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Azriel' Mathtest</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="Your site name">
+   
+    <!--CSS link-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <p></p>
+    </header>
+    <nav>
+        <!--wesite navigation here-->
+    </nav>
+    <main>
+        <!--main content-->
+        <h1></h1>
+
+    <br>
+
+<label>
+        <input type="radio" name="numberChoice" value="specified"  checked onchange="toggleNumberInput()">
+        Specify a number
+</label>
+
+<label>
+        <input type="radio" name="numberChoice" value="random" onchange="toggleNumberInput()">
+        Random number
+</label>
+<br><br>
+
+    <input type="number" id="firstNumber"  class = 'small-input'>
+    <br>
+    How many problems would you like to generate?
+    <input type="number" id="numberOfProblems"  class = 'small-input'>
+    <br><br>
+
+    <button onclick="createTest()">Create Test</button>
+
+    <div id="test"></div>
+    
+<br>
+
+    <button onclick="gradeTest()">Grade Test</button>
+    <button onclick="resetTest()">Reset Test</button>
+
+    <div id="result"></div>
+
+    </main>
+   
+
+    <!--JavaSript file-->
+    <script src="azrielsMath.js"></script>
+</body>
+</html>
